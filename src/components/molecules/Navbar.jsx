@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import Logo from '../../assets/img/logo-ICTI_Chiapas.svg' 
+import Logo from '../../assets/img/logoICTI-blanco.png' 
 
 const StyledHeader = styled.header`
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     position: fixed;
     top: 0;
     display: flex;
@@ -23,7 +23,7 @@ const StyledHeader = styled.header`
         /* background-color: gray; */
     }
     img{
-        height: 70%;
+        height: 90%;
     }
 
     .options{
