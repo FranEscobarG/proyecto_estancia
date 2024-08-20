@@ -22,6 +22,9 @@ const StyledHeader = styled.header`
         align-items: center;
         /* background-color: gray; */
     }
+    .link-logo{
+        height: 100%;
+    }
     img{
         height: 90%;
     }
@@ -34,18 +37,21 @@ const StyledHeader = styled.header`
         text-decoration: none;
         color: white;
     }
+    .options .navLink:hover{
+        text-decoration: underline ; 
+    }
 `;
 
 function Navbar() {
     return ( 
         <StyledHeader>
             <nav>
-                <img src={Logo} alt="" />
+                <NavLink to={'https://icti.chiapas.gob.mx/'} className={"link-logo"}><img src={Logo} alt="" /></NavLink>
                 <div className="options">
-                    <NavLink to={'#'} className={"navLink"}>Inicio</NavLink>
-                    <NavLink to={'#'} className={"navLink"}>Dashboard</NavLink>
-                    <NavLink to={'#'} className={"navLink"}>Nosotros</NavLink>
-                    <NavLink to={'#'} className={"navLink"}>Iniciar Sesión</NavLink>
+                    <NavLink to={'/'} className={"navLink"}>Inicio</NavLink>
+                    <NavLink to={'/dashboard'} className={"navLink"}>Dashboard</NavLink>
+                    <NavLink to={'https://icti.chiapas.gob.mx/conocenos'} className={"navLink"}>Nosotros</NavLink>
+                    <NavLink to={'/login'} className={"navLink"}>Iniciar Sesión</NavLink>
                 </div>
             </nav>
         </StyledHeader>

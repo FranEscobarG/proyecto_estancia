@@ -1,0 +1,31 @@
+
+.box-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-login{
+    width: 70%;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+
+.btn-login{
+    width: 60%;
+    padding: 1rem;
+    margin: 3rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    background-color: #780c37;
+    cursor: pointer;
+}
+.btn-login:hover{
+    background-color: #601130;
+}

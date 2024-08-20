@@ -1,13 +1,16 @@
 import "../../assets/css/inicio.css";
+import Banner from "../atoms/Banner";
+import Caption from "../atoms/Caption";
+import Title from "../atoms/Titles";
 
 function ContentInicio() {
   return (
     <div className="content-inicio">
-      <div className="cover"></div>
+        <Banner/>
       <div className="main">
         <div className="container-info">
-          <h1>Sistema de Servicios y Soporte de la Unidad de Informatica</h1>
-          <h2>Bienvenido al Sistema de Gestión de Incidencias Tecnológicas</h2>
+          <Title text={'Sistema de Servicios y Soporte de la Unidad de Informatica'} />
+          <Caption text={"Bienvenido al Sistema de Gestión de Incidencias Tecnológicas"} />
           <p className="description">
             Esta plataforma ha sido desarrollada para facilitar la comunicación
             entre las diferentes áreas de la institución y el departamento de
@@ -18,7 +21,7 @@ function ContentInicio() {
           </p>
 
           <section id="how-it-works">
-            <h2>Cómo Funciona</h2>
+            <Caption text={"Cómo Funciona"} />
             <ol>
               <li>
                 <strong>Crear un Reporte:</strong> Las áreas de la institución
@@ -38,7 +41,7 @@ function ContentInicio() {
           </section>
 
           <section id="benefits">
-            <h2>Beneficios del Sistema</h2>
+            <Caption text={"Beneficios del Sistema"} />
             <ul>
               <li>
                 <strong>Eficiencia:</strong> Reducción en los tiempos de
